@@ -55,7 +55,7 @@ Support the project: [Buy me a coffee ☕](https://coff.ee/daouimahmoud)
 
 ## 📜 License
 
-This project is open-source under the [MIT License](LICENSE).
+This project is open-source under the [ MIT License](https://opensource.org/license/MIT).
 
 ---
 
