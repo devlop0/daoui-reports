@@ -1,0 +1,173 @@
+object PreviewF: TPreviewF
+  Left = 0
+  Top = 0
+  Caption = 'Preview'
+  ClientHeight = 532
+  ClientWidth = 339
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 3
+  object ToolBar1: TToolBar
+    Size.Width = 339.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    TintColor = claWhitesmoke
+    object SpeedButton2: TSpeedButton
+      Align = Left
+      StyledSettings = [Family, Size, FontColor]
+      IconTintColor = claDarkgreen
+      Margins.Left = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 150.000000000000000000
+      Size.Width = 59.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Save as PDF'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.WordWrap = True
+      TextSettings.Trimming = None
+      OnClick = SpeedButton2Click
+    end
+    object Button1: TButton
+      Align = Left
+      StyledSettings = [Family, FontColor]
+      Position.X = 214.000000000000000000
+      Size.Width = 51.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Print'
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.Trimming = None
+      OnClick = Button1Click
+    end
+    object Layout1: TLayout
+      Align = Left
+      Size.Width = 145.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      object Label1: TLabel
+        Align = Left
+        AutoSize = True
+        StyledSettings = [Family, FontColor]
+        Size.Width = 66.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.WordWrap = False
+        Text = 'N'#176' Page : '
+        TabOrder = 1
+      end
+      object LabelNPge: TLabel
+        Align = Client
+        StyledSettings = [Family, FontColor]
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Size.Width = 24.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Center
+        TextSettings.WordWrap = False
+        Text = '01'
+        TabOrder = 0
+      end
+      object NumPage: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Left
+        TabOrder = 4
+        Cursor = crIBeam
+        Min = 1.000000000000000000
+        Value = 1.000000000000000000
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Position.X = 70.000000000000000000
+        Position.Y = 8.000000000000000000
+        VertIncrement = 1.000000000000000000
+        Margins.Left = 4.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, FontColor]
+      end
+    end
+    object ComboZOM: TComboEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Right
+      TabOrder = 2
+      KeyboardType = NumberPad
+      ItemHeight = 19.000000000000000000
+      Items.Strings = (
+        '25'
+        '50'
+        '75'
+        '100'
+        '150'
+        '200')
+      ItemIndex = 3
+      Text = '100'
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Position.X = 272.000000000000000000
+      Position.Y = 8.000000000000000000
+      StyledSettings = [Family, FontColor]
+      Margins.Left = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Size.Width = 62.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      KillFocusByReturn = True
+      OnChangeTracking = ComboZOMChangeTracking
+    end
+  end
+  object ScrollBoxDM: TScrollBox
+    Align = Client
+    Size.Width = 339.000000000000000000
+    Size.Height = 484.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 334.000000000000000000
+    Viewport.Height = 479.000000000000000000
+    object LayoutZOM: TLayout
+      Align = Center
+      Size.Width = 794.000000000000000000
+      Size.Height = 1123.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Rectintercects: TRectangle
+        Align = Center
+        Size.Width = 200.000000000000000000
+        Size.Height = 2.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+    end
+  end
+  object LabelNpaes: TText
+    Align = Center
+    Size.Width = 208.000000000000000000
+    Size.Height = 110.000000000000000000
+    Size.PlatformDefault = False
+    Stretch = True
+    Text = ' '
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  object ActionList1: TActionList
+    Left = 242
+    Top = 358
+    object Actiontopdf: TAction
+      Text = 'Actiontopdf'
+      OnExecute = ActiontopdfExecute
+    end
+  end
+end

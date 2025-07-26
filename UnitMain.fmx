@@ -1,0 +1,669 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'Main Form'
+  ClientHeight = 532
+  ClientWidth = 311
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object BindNavigator2: TBindNavigator
+    Align = Bottom
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 377.000000000000000000
+    Size.Width = 291.000000000000000000
+    Size.Height = 39.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    DataSource = BindSourceDB1
+    VisibleButtons = [nbInsert, nbDelete, nbPost, nbCancel]
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
+  end
+  object VertScrollBox1: TVertScrollBox
+    Align = Client
+    Size.Width = 311.000000000000000000
+    Size.Height = 302.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 306.000000000000000000
+    Viewport.Height = 302.000000000000000000
+    object Layout1: TLayout
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 286.000000000000000000
+      Size.Height = 58.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label1: TLabel
+        Align = Top
+        AutoSize = True
+        Size.Width = 286.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Species Name'
+        TabOrder = 0
+      end
+      object Rectangle1: TRectangle
+        Align = Client
+        Fill.Color = claWhite
+        Margins.Left = 15.000000000000000000
+        Margins.Right = 15.000000000000000000
+        Size.Width = 256.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 8.000000000000000000
+        YRadius = 8.000000000000000000
+        object Edit1: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 0
+          Margins.Left = 8.000000000000000000
+          Margins.Right = 8.000000000000000000
+          Size.Width = 240.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+    object Layout2: TLayout
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 126.000000000000000000
+      Size.Width = 286.000000000000000000
+      Size.Height = 36.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Label2: TLabel
+        Align = Client
+        AutoSize = True
+        Size.Width = 113.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Trailing
+        Text = 'Length (cm)'
+        TabOrder = 0
+      end
+      object Rectangle3: TRectangle
+        Align = Right
+        Fill.Color = claWhite
+        Margins.Right = 15.000000000000000000
+        Position.X = 113.000000000000000000
+        Size.Width = 158.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 8.000000000000000000
+        YRadius = 8.000000000000000000
+        object Edit2: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 0
+          Margins.Left = 8.000000000000000000
+          Margins.Right = 8.000000000000000000
+          Size.Width = 142.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+    object Layout4: TLayout
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 164.000000000000000000
+      Size.Width = 286.000000000000000000
+      Size.Height = 199.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object Memo1: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Align = Client
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 15.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 266.000000000000000000
+        Size.Height = 172.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 258.000000000000000000
+        Viewport.Height = 164.000000000000000000
+      end
+      object Label4: TLabel
+        Align = Top
+        Size.Width = 286.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Notes'
+        TabOrder = 1
+      end
+    end
+    object Layout6: TLayout
+      Align = Top
+      Position.Y = 363.000000000000000000
+      Size.Width = 306.000000000000000000
+      Size.Height = 127.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      object Image1: TImage
+        MultiResBitmap = <
+          item
+            Width = 250
+            Height = 150
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000FA000000960806000000F7DA95
+              1C0000000473424954080808087C086488000000A749444154789CEDC1010100
+              00008220FFAF6E48400100000000000000000000000000000000000000000000
+              0000000000000000000000000000000000000000000000000000000000000000
+              0000000000000000000000000000000000000000000000000000000000000000
+              0000000000000000000000000000000000000000000000000000000000000000
+              0000000000000000000000000000000000000000000000000000F06B4AA40001
+              9CAD8E400000000049454E44AE426082}
+          end>
+        Align = Center
+        Size.Width = 110.000000000000000000
+        Size.Height = 110.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object Layout7: TLayout
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 62.000000000000000000
+      Size.Width = 286.000000000000000000
+      Size.Height = 59.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Label3: TLabel
+        Align = Top
+        AutoSize = True
+        Size.Width = 286.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Common Name'
+        TabOrder = 0
+      end
+      object Rectangle2: TRectangle
+        Align = Client
+        Fill.Color = claWhite
+        Margins.Left = 15.000000000000000000
+        Margins.Right = 15.000000000000000000
+        Size.Width = 256.000000000000000000
+        Size.Height = 37.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 8.000000000000000000
+        YRadius = 8.000000000000000000
+        object Edit3: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 0
+          Margins.Left = 8.000000000000000000
+          Margins.Right = 8.000000000000000000
+          Size.Width = 240.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+  end
+  object Layout5: TLayout
+    Align = MostBottom
+    Position.Y = 416.000000000000000000
+    Size.Width = 311.000000000000000000
+    Size.Height = 116.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Layout3: TLayout
+      Align = Top
+      Margins.Top = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 311.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Button1: TButton
+        Align = Right
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Position.X = 208.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 93.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Close'
+        TextSettings.Trimming = None
+        OnClick = Button1Click
+      end
+      object Button2: TButton
+        Align = Left
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 111.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Preview'
+        TextSettings.Trimming = None
+        OnClick = Button2Click
+      end
+      object Button6: TButton
+        Align = Center
+        Margins.Top = 4.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Band'
+        TextSettings.Trimming = None
+        OnClick = Button6Click
+      end
+    end
+  end
+  object Text1: TText
+    Align = Top
+    Margins.Left = 15.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Position.X = 15.000000000000000000
+    Size.Width = 281.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    Stretch = True
+    Text = 'Daoui Report'
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claBlue
+  end
+  object Layout8: TLayout
+    Align = Top
+    Margins.Left = 15.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Position.X = 15.000000000000000000
+    Position.Y = 25.000000000000000000
+    Size.Width = 281.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    object BindNavigator1: TBindNavigator
+      Align = Client
+      Margins.Top = 5.000000000000000000
+      Size.Width = 162.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      DataSource = BindSourceDB1
+      VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast]
+      xRadius = 4.000000000000000000
+      yRadius = 4.000000000000000000
+    end
+    object Label5: TLabel
+      Align = Left
+      Size.Width = 57.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      Text = '1/28'
+      TabOrder = 1
+    end
+    object Button3: TButton
+      Align = Right
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 224.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 55.000000000000000000
+      Size.Height = 36.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Raw'
+      TextSettings.Trimming = None
+      OnClick = Button3Click
+    end
+  end
+  object RectMasq: TRectangle
+    Align = Contents
+    Fill.Color = claBlack
+    Opacity = 0.500000000000000000
+    Size.Width = 311.000000000000000000
+    Size.Height = 532.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+  end
+  object RectSQL: TRectangle
+    Align = Center
+    Fill.Kind = Gradient
+    Fill.Gradient.Points = <
+      item
+        Color = claDarkkhaki
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = claWhite
+        Offset = 1.000000000000000000
+      end>
+    Size.Width = 232.000000000000000000
+    Size.Height = 290.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Visible = False
+    XRadius = 8.000000000000000000
+    YRadius = 8.000000000000000000
+    object Layout9: TLayout
+      Align = Client
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 222.000000000000000000
+      Size.Height = 280.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object MemoSQL: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Lines.Strings = (
+          'Select * from ListFish'
+          'LIMIT 28')
+        Align = Top
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 212.000000000000000000
+        Size.Height = 185.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 204.000000000000000000
+        Viewport.Height = 177.000000000000000000
+      end
+      object Layout10: TLayout
+        Align = Bottom
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 227.000000000000000000
+        Size.Width = 202.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Button4: TButton
+          Align = Left
+          Size.Width = 97.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'ExecSQL'
+          TextSettings.Trimming = None
+          OnClick = Button4Click
+        end
+        object Button5: TButton
+          Align = Right
+          Position.X = 128.000000000000000000
+          Size.Width = 74.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Cancel'
+          TextSettings.Trimming = None
+          OnClick = Button5Click
+        end
+      end
+    end
+  end
+  object RectBande: TRectangle
+    Align = Center
+    Fill.Kind = Gradient
+    Fill.Gradient.Points = <
+      item
+        Color = claDarkkhaki
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = claWhite
+        Offset = 1.000000000000000000
+      end>
+    Size.Width = 232.000000000000000000
+    Size.Height = 290.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlue
+    Visible = False
+    XRadius = 8.000000000000000000
+    YRadius = 8.000000000000000000
+    object Layout11: TLayout
+      Align = Client
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 212.000000000000000000
+      Size.Height = 280.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Layout12: TLayout
+        Align = Bottom
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 227.000000000000000000
+        Size.Width = 192.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Button7: TButton
+          Align = Center
+          Margins.Top = 4.000000000000000000
+          Margins.Bottom = 4.000000000000000000
+          Size.Width = 90.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Ok'
+          TextSettings.Trimming = None
+          OnClick = Button7Click
+        end
+      end
+      object CheckHeader: TCheckBox
+        Align = Top
+        IsChecked = True
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 199.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Band Page Header'
+        OnChange = CheckHeaderChange
+      end
+      object CheckTitle: TCheckBox
+        Align = Top
+        IsChecked = True
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 39.000000000000000000
+        Size.Width = 199.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Band Title'
+        OnChange = CheckTitleChange
+      end
+      object CheckColumnH: TCheckBox
+        Align = Top
+        IsChecked = True
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 68.000000000000000000
+        Size.Width = 199.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Band Column Header'
+        OnChange = CheckColumnHChange
+      end
+      object CheckDetail: TCheckBox
+        Align = Top
+        IsChecked = True
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 97.000000000000000000
+        Size.Width = 199.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'Band Detail'
+        OnChange = CheckDetailChange
+      end
+      object ChckSubDet: TCheckBox
+        Align = Top
+        IsChecked = True
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 126.000000000000000000
+        Size.Width = 199.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        Text = 'Band Sub Detail '
+        OnChange = ChckSubDetChange
+      end
+      object CheckSum: TCheckBox
+        Align = Top
+        IsChecked = True
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 155.000000000000000000
+        Size.Width = 199.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        Text = 'Band Summary'
+        OnChange = CheckSumChange
+      end
+      object CheckFooter: TCheckBox
+        Align = Top
+        IsChecked = True
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 184.000000000000000000
+        Size.Width = 199.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Text = 'Band Page Footer'
+        OnChange = CheckFooterChange
+      end
+    end
+  end
+  object QuerySQL: TFDQuery
+    AfterOpen = QuerySQLAfterOpen
+    Connection = FDConnection1
+    SQL.Strings = (
+      'Select * from ListFish'
+      'LIMIT 28')
+    Left = 259
+    Top = 112
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = QuerySQL
+    ScopeMappings = <>
+    Left = 272
+    Top = 256
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 284
+    Top = 165
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'SpeciesNameField'
+      Control = Edit1
+      Track = False
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'NotesField'
+      Control = Memo1
+      Track = False
+    end
+    object LinkPropertyToFieldBitmap: TLinkPropertyToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'GraphicField'
+      Component = Image1
+      ComponentProperty = 'Bitmap'
+    end
+    object LinkControlToField4: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'CommonNameField'
+      Control = Edit3
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'LengthCmField'
+      Control = Edit2
+      Track = False
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = QuerySQL
+    OnDataChange = DataSource1DataChange
+    Left = 250
+    Top = 67
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'DriverID=SQLite')
+    LoginPrompt = False
+    Left = 82
+    Top = 261
+  end
+end
