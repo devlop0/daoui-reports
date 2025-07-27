@@ -60,7 +60,7 @@ Watch the demo on YouTube:
 
 For detailed documentation of the codebase and how the report engine works internally:
 
-📖 **[View the Full Developer Guide]([./Dao%20Ui%20Reports%20Devguide.md](https://github.com/devlop0/daoui-reports/blob/main/Daoui%20Reports%20Devguide.pdf))**
+📖 **[View the Full Developer Guide](https://github.com/devlop0/daoui-reports/blob/main/Daoui%20Reports%20Devguide.pdf)**
 ------
 
 ## ☕ Support the Project
