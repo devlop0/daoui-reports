@@ -88,13 +88,7 @@ This project is open-source under the [ MIT License](https://github.com/devlop0/
 
 ---
 
-## 💡 Contributing
-
-Pull requests and feature suggestions are welcome!  
-Let’s make DAOUI Reports a powerful open-source tool for Delphi developers. 🙌
-
-
 ## 🤝 Contributions
 
 Contributions, ideas, and improvements are welcome!  
-Let’s make **DAOUI Reports** the best FMX report engine together!
+Let’s make **DAOUI Reports** the best FMX report engine together!🙌
