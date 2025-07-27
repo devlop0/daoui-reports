@@ -1,23 +1,27 @@
-# DAOUI Reports
+**DAOUI Reports** is an open-source visual report designer and viewer built with **Delphi FireMonkey (FMX)**. It enables developers to design, preview, and print multi-page reports with headers, footers, details, and data binding — all using a simple drag-and-drop visual layout.
 
-**DAOUI Reports** is an open-source visual report designer for [Delphi FMX](https://www.embarcadero.com/products/delphi), created by **Daoui Mahmoud**, supporting both **Windows** and **Android** platforms.
-
-![DAOUI Reports](https://user-images.githubusercontent.com/your-placeholder-image.png)
+> ⚡ Cross-platform (Windows & Android) | 🧰 Built with Delphi | 📤 Exports to PDF
 
 ---
 
 ## 🌟 Key Features
 
-- ✅ QuickReport-style layout for FMX
-- ✅ Drag & drop report design using shapes and components
-- ✅ Supports labels, text fields, images, and data binding
-- ✅ Export to **PDF**
-- ✅ Direct **printing**
-- ✅ Supports different paper sizes (A4, etc.)
-- ✅ Fully native Delphi code, no external dependencies
-- ✅ Works on **Windows & Android**
+- Visual layout editor (design headers, footers, and details).
+- Drag-and-drop support for `TLabel`, `TImage`, and more.
+- Zoom levels from 25% to 200%.
+- Multi-page reports with auto pagination.
+- Dynamic data binding to datasets.
+- Print preview and export to PDF.
+- Cross-platform: works on **Windows** and **Android**.
+
 
 ---
+## 🛠️ Built With
+
+- **Delphi FireMonkey (FMX)**
+- Native FMX controls: `TRectangle`, `TImage`, `TLabel`, etc.
+- Supports Delphi 10 and later.
+- ----
 
 ## 📹 Demo
 
@@ -26,23 +30,48 @@ Watch the demo on YouTube:
 
 ---
 
-## 📁 Source Structure
+## 📁 Project Structure
 
-- `MainForm.pas/fmx` — Main UI
-- `DesignerForm.pas/fmx` — Visual report designer
-- `PrintPreview.pas` — PDF & print rendering
-- `Database` — Example datasets
-- `Units` — Helper units and component logic
+| Unit           | Description                              |
+|----------------|------------------------------------------|
+| `DesignU.pas`  | Visual report designer logic.            |
+| `PreviewU.pas` | Rendering & print preview functionality. |
+| `DataU.pas`    | Dataset and data binding logic.          |
+| `Main.pas`     | Application entry and mode switching.    |
 
 ---
 
 ## 🛠️ Requirements
 
-- Delphi 10.3+ (FMX support for Windows/Android)
+- Delphi 10+ (FMX support for Windows/Android)
 - FireDAC components for DB binding
 - PDF export uses standard Delphi FMX printing APIs
 
 ---
+## 📦 Installation
+
+1. Open the project in **Delphi 10+**.
+2. Build and run the application on Windows or Android.
+3. Start designing reports using the visual interface.
+
+---
+
+## 🧑‍💻 Developer Guide
+
+For detailed documentation of the codebase and how the report engine works internally:
+
+📖 **[View the Full Developer Guide]([./Dao%20Ui%20Reports%20Devguide.md](https://github.com/devlop0/daoui-reports/blob/main/Daoui%20Reports%20Devguide.pdf))**
+------
+
+## ☕ Support the Project
+
+If you find DAOUI Reports useful, consider supporting its development:
+
+👉[Buy me a coffee ☕](https://coff.ee/daouimahmoud)
+
+
+---
+
 
 ## 💡 Author
 
@@ -58,6 +87,12 @@ Support the project: [Buy me a coffee ☕](https://coff.ee/daouimahmoud)
 This project is open-source under the [ MIT License](https://github.com/devlop0/daoui-reports/blob/main/LICENSE).
 
 ---
+
+## 💡 Contributing
+
+Pull requests and feature suggestions are welcome!  
+Let’s make DAOUI Reports a powerful open-source tool for Delphi developers. 🙌
+
 
 ## 🤝 Contributions
 
