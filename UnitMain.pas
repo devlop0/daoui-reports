@@ -18,31 +18,31 @@ uses
 
 type
   TFormMain = class(TForm)
-    BindNavigator1: TBindNavigator;
-    BindNavigator2: TBindNavigator;
+    BindNavigator1: TBindNavigator;      // أداة التنقل بين السجلات
+    BindNavigator2: TBindNavigator;      // أداة تنقل ثانية
     Layout1: TLayout;
     Layout2: TLayout;
     Layout4: TLayout;
-    Edit1: TEdit;
-    Edit2: TEdit;
-    Memo1: TMemo;
+    Edit1: TEdit;                       // حقل إدخال نص (غير مستخدم حاليًا)
+    Edit2: TEdit;                       // حقل إدخال نص (غير مستخدم حاليًا)
+    Memo1: TMemo;                       // مذكرة لعرض رسائل أو نتائج
     Label1: TLabel;
     Label2: TLabel;
     Label4: TLabel;
     VertScrollBox1: TVertScrollBox;
     Layout5: TLayout;
     Layout3: TLayout;
-    Button1: TButton;
-    Button2: TButton;
-    QuerySQL: TFDQuery;
-    BindSourceDB1: TBindSourceDB;
-    BindingsList1: TBindingsList;
+    Button1: TButton;                   // زر للإغلاق
+    Button2: TButton;                   // زر لعرض التقرير
+    QuerySQL: TFDQuery;                 // استعلام SQL للبيانات
+    BindSourceDB1: TBindSourceDB;       // مصدر الربط بين البيانات والواجهة
+    BindingsList1: TBindingsList;       // قائمة الربط
     LinkControlToField1: TLinkControlToField;
     LinkControlToField3: TLinkControlToField;
     Image1: TImage;
     Layout6: TLayout;
     Layout7: TLayout;
-    Edit3: TEdit;
+    Edit3: TEdit;                       // حقل إدخال نص (غير مستخدم حاليًا)
     Label3: TLabel;
     LinkPropertyToFieldBitmap: TLinkPropertyToField;
     LinkControlToField4: TLinkControlToField;
@@ -52,51 +52,51 @@ type
     Rectangle2: TRectangle;
     Rectangle3: TRectangle;
     Layout8: TLayout;
-    Label5: TLabel;
-    Button3: TButton;
+    Label5: TLabel;                     // يعرض رقم السجل الحالي
+    Button3: TButton;                   // زر لعرض SQL
     RectMasq: TRectangle;
     RectSQL: TRectangle;
     Layout9: TLayout;
-    MemoSQL: TMemo;
+    MemoSQL: TMemo;                     // مذكرة لإدخال استعلام SQL
     Layout10: TLayout;
-    Button4: TButton;
-    Button5: TButton;
-    Button6: TButton;
+    Button4: TButton;                   // زر لتنفيذ الاستعلام
+    Button5: TButton;                   // زر مثال: عرض 28 سجل
+    Button6: TButton;                   // زر لعرض إعدادات العناصر
     RectBande: TRectangle;
     Layout11: TLayout;
     Layout12: TLayout;
-    Button7: TButton;
-    CheckHeader: TCheckBox;
-    CheckTitle: TCheckBox;
-    CheckColumnH: TCheckBox;
-    CheckDetail: TCheckBox;
-    ChckSubDet: TCheckBox;
-    CheckSum: TCheckBox;
-    CheckFooter: TCheckBox;
+    Button7: TButton;                   // زر لإخفاء إعدادات العناصر
+    CheckHeader: TCheckBox;             // إظهار/إخفاء رأس الصفحة
+    CheckTitle: TCheckBox;              // إظهار/إخفاء العنوان
+    CheckColumnH: TCheckBox;            // إظهار/إخفاء رأس الأعمدة
+    CheckDetail: TCheckBox;             // إظهار/إخفاء تفاصيل السجل
+    ChckSubDet: TCheckBox;              // إظهار/إخفاء التفاصيل الفرعية
+    CheckSum: TCheckBox;                // إظهار/إخفاء الملخص
+    CheckFooter: TCheckBox;             // إظهار/إخفاء تذييل الصفحة
     DataSource1: TDataSource;
-    FDConnection1: TFDConnection;
-    procedure Button4Click(Sender: TObject);
-    procedure Button5Click(Sender: TObject);
-    procedure QuerySQLAfterOpen(DataSet: TDataSet);
-    procedure Button2Click(Sender: TObject);
-    procedure Button3Click(Sender: TObject);
-    procedure CheckHeaderChange(Sender: TObject);
-    procedure CheckTitleChange(Sender: TObject);
-    procedure CheckColumnHChange(Sender: TObject);
-    procedure CheckDetailChange(Sender: TObject);
-    procedure ChckSubDetChange(Sender: TObject);
-    procedure CheckFooterChange(Sender: TObject);
-    procedure CheckSumChange(Sender: TObject);
-    procedure Button6Click(Sender: TObject);
-    procedure Button7Click(Sender: TObject);
-    procedure DataSource1DataChange(Sender: TObject; Field: TField);
-    procedure FormActivate(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
+    FDConnection1: TFDConnection;       // اتصال بقاعدة البيانات
+    procedure Button4Click(Sender: TObject);            // تنفيذ SQL
+    procedure Button5Click(Sender: TObject);            // عرض مثال
+    procedure QuerySQLAfterOpen(DataSet: TDataSet);     // بعد فتح الاستعلام
+    procedure Button2Click(Sender: TObject);            // عرض التقرير
+    procedure Button3Click(Sender: TObject);            // إظهار SQL
+    procedure CheckHeaderChange(Sender: TObject);       // تغيير إعداد رأس الصفحة
+    procedure CheckTitleChange(Sender: TObject);        // تغيير إعداد العنوان
+    procedure CheckColumnHChange(Sender: TObject);      // تغيير إعداد رأس الأعمدة
+    procedure CheckDetailChange(Sender: TObject);       // تغيير إعداد التفاصيل
+    procedure ChckSubDetChange(Sender: TObject);        // تغيير إعداد التفاصيل الفرعية
+    procedure CheckFooterChange(Sender: TObject);       // تغيير إعداد التذييل
+    procedure CheckSumChange(Sender: TObject);          // تغيير إعداد الملخص
+    procedure Button6Click(Sender: TObject);            // إظهار إعدادات العناصر
+    procedure Button7Click(Sender: TObject);            // إخفاء إعدادات العناصر
+    procedure DataSource1DataChange(Sender: TObject; Field: TField); // تغيير السجل
+    procedure FormActivate(Sender: TObject);            // عند تفعيل النموذج
+    procedure Button1Click(Sender: TObject);            // إغلاق النموذج
+    procedure FormCreate(Sender: TObject);              // عند إنشاء النموذج
   private
-    { D�clarations priv�es }
+    { Dclarations prives }
   public
-    { D�clarations publiques }
+    { Dclarations publiques }
   end;
 
 var
@@ -105,139 +105,231 @@ var
 implementation
 
 {$R *.fmx}
- uses IOUtils,DesignU,PreviewU;
+ Uses IOUtils,DesignU,PreviewU;
+
+// -------------------------------------------------------------------------
+// الحدث: Button1Click
+// الوظيفة: إغلاق النموذج الرئيسي
+// Purpose: Close the main form
+// -------------------------------------------------------------------------
 procedure TFormMain.Button1Click(Sender: TObject);
 begin
-//showmessage( ExtractFileDir(ParamStr(0)) + '\DBReport.db')
-close;
+  close;
 end;
 
+// -------------------------------------------------------------------------
+// الحدث: Button2Click
+// الوظيفة: عرض نافذة المعاينة
+// Purpose: Show the preview window
+// يتم تعيين exctep لبدء توليد التقرير
+// The exctep flag tells PreviewF to generate the report
+// -------------------------------------------------------------------------
 procedure TFormMain.Button2Click(Sender: TObject);
 begin
-    PreviewF.exctep := True;
-    PreviewF.Show;
-
-
+  PreviewF.exctep := True;
+  PreviewF.Show;
 end;
 
+// -------------------------------------------------------------------------
+// الحدث: Button3Click
+// الوظيفة: إظهار مربع SQL للتعديل
+// Purpose: Show the SQL editing box
+// -------------------------------------------------------------------------
 procedure TFormMain.Button3Click(Sender: TObject);
 begin
- RectMasq.Visible := True;
- RectSQL.Visible:=True;
+  RectMasq.Visible := True;
+  RectSQL.Visible := True;
 end;
 
+// -------------------------------------------------------------------------
+// الحدث: Button4Click
+// الوظيفة: تنفيذ الاستعلام المكتوب في MemoSQL
+// Purpose: Execute the SQL query written in MemoSQL
+// يغلق الاستعلام القديم، يعيّن النص الجديد، ثم يفتحه
+// Closes old query, sets new text, then opens it
+// -------------------------------------------------------------------------
 procedure TFormMain.Button4Click(Sender: TObject);
 begin
   QuerySQL.Close;
-  QuerySQL.SQL.Text:= MemoSQL.Lines.Text;
-QuerySQL.Open;
-end;
-
-procedure TFormMain.Button5Click(Sender: TObject);
-begin
-
-memo1.Lines.Clear;
-memo1.Lines.Text:= 'Select * from ListFish LIMIT 28 ';
- QuerySQL.Close;
-QuerySQL.SQL.Text:= 'Select * from ListFish LIMIT 28 ';
- QuerySQL.Open;
-
-
-end;
-
-procedure TFormMain.Button6Click(Sender: TObject);
-begin
- RectMasq.Visible := True;
-  RectBande.Visible:=True;
-
-end;
-
-procedure TFormMain.Button7Click(Sender: TObject);
-begin
-     RectMasq.Visible := False;
-  RectBande.Visible := False;
-end;
-
-procedure TFormMain.ChckSubDetChange(Sender: TObject);
-begin
-  DesignF.SubDetailLayt := ChckSubDet.IsChecked;
-        DesignF.SubDetail.visible:= ChckSubDet.IsChecked;
-
-end;
-
-procedure TFormMain.CheckColumnHChange(Sender: TObject);
-begin
- DesignF.ColumnHeaderLayt := CheckColumnH.IsChecked;
-    DesignF.ColumnHeader.visible:= CheckColumnH.IsChecked;
-
-end;
-
-procedure TFormMain.CheckDetailChange(Sender: TObject);
-begin
- DesignF.ZoneDetail.Visible := CheckDetail.IsChecked;
-
-
-end;
-
-procedure TFormMain.CheckFooterChange(Sender: TObject);
-begin
-    DesignF.PageFooterLayt := CheckFooter.IsChecked;
-      DesignF.PageFooter.visible := CheckFooter.IsChecked;
-
-end;
-
-procedure TFormMain.CheckHeaderChange(Sender: TObject);
-begin
-DesignF.PageHeaderLayt:= CheckHeader.IsChecked;
-DesignF.PageHeader.visible:= CheckHeader.IsChecked;
-
-end;
-
-procedure TFormMain.CheckSumChange(Sender: TObject);
-begin
- DesignF.SummaryLayt := CheckSum.IsChecked;
- DesignF.Summary.visible := CheckSum.IsChecked;
-
-end;
-
-procedure TFormMain.CheckTitleChange(Sender: TObject);
-begin
-   DesignF.TitleLayt:= CheckTitle.IsChecked;
-   DesignF.Title.visible:= CheckTitle.IsChecked;
-
-end;
-
-procedure TFormMain.DataSource1DataChange(Sender: TObject; Field: TField);
-begin
-   Label5.Text:= inttostr(QuerySQL.RecNo)+'/'+inttostr(QuerySQL.RecordCount);
-end;
-
-procedure TFormMain.FormActivate(Sender: TObject);
-begin
-if not QuerySQL.Active then
-
+  QuerySQL.SQL.Text := MemoSQL.Lines.Text;
   QuerySQL.Open;
 end;
 
-procedure TFormMain.FormCreate(Sender: TObject);
+// -------------------------------------------------------------------------
+// الحدث: Button5Click
+// الوظيفة: مثال سريع: عرض أول 28 سجل من جدول ListFish
+// Purpose: Quick example: Show first 28 records from ListFish table
+// يستخدم نفس الكود في Button4Click
+// Reuses the same logic as Button4Click
+// -------------------------------------------------------------------------
+procedure TFormMain.Button5Click(Sender: TObject);
 begin
-       {$IFDEF ANDROID}
- FDConnection1.Params.Values['Database'] :=
- TPath.GetDocumentsPath + PathDelim + 'DBReport.db';
-
-      {$ENDIF ANDROID}
-
-       {$IFDEF MSWINDOWS}
- FDConnection1.Params.Values['Database'] := ExtractFileDir(ParamStr(0)) + '\DBReport.db';
-   //   FDConnection1.Params.Password:='1d*kMb#dAoUi/m-96+v>£qsMln*89+j79ùj%#vxy80µhsq2019coved19';
-          {$ENDIF MSWINDOWS}
-
+  memo1.Lines.Clear;
+  memo1.Lines.Text := 'Select * from ListFish LIMIT 28 ';
+  QuerySQL.Close;
+  QuerySQL.SQL.Text := 'Select * from ListFish LIMIT 28 ';
+  QuerySQL.Open;
 end;
 
+// -------------------------------------------------------------------------
+// الحدث: Button6Click
+// الوظيفة: إظهار إعدادات عناصر التقرير
+// Purpose: Show report elements settings panel
+// يُستخدم لتفعيل/إلغاء رؤية Header, Title, Detail...
+// Used to toggle visibility of report sections
+// -------------------------------------------------------------------------
+procedure TFormMain.Button6Click(Sender: TObject);
+begin
+  RectMasq.Visible := True;
+  RectBande.Visible := True;
+end;
+
+// -------------------------------------------------------------------------
+// الحدث: Button7Click
+// الوظيفة: إخفاء إعدادات عناصر التقرير
+// Purpose: Hide report elements settings panel
+// -------------------------------------------------------------------------
+procedure TFormMain.Button7Click(Sender: TObject);
+begin
+  RectMasq.Visible := False;
+  RectBande.Visible := False;
+end;
+
+// -------------------------------------------------------------------------
+// الحدث: ChckSubDetChange
+// الوظيفة: تحديث إعداد التفاصيل الفرعية في DesignF
+// Purpose: Update SubDetail visibility in DesignF
+// -------------------------------------------------------------------------
+procedure TFormMain.ChckSubDetChange(Sender: TObject);
+begin
+  DesignF.SubDetailLayt := ChckSubDet.IsChecked;
+  DesignF.SubDetail.visible := ChckSubDet.IsChecked;
+end;
+
+// -------------------------------------------------------------------------
+// الحدث: CheckColumnHChange
+// الوظيفة: تحديث إعداد رأس الأعمدة في DesignF
+// Purpose: Update ColumnHeader visibility in DesignF
+// -------------------------------------------------------------------------
+procedure TFormMain.CheckColumnHChange(Sender: TObject);
+begin
+  DesignF.ColumnHeaderLayt := CheckColumnH.IsChecked;
+  DesignF.ColumnHeader.visible := CheckColumnH.IsChecked;
+end;
+
+// -------------------------------------------------------------------------
+// الحدث: CheckDetailChange
+// الوظيفة: تحديث إعداد التفاصيل في DesignF
+// Purpose: Update Detail visibility in DesignF
+// -------------------------------------------------------------------------
+procedure TFormMain.CheckDetailChange(Sender: TObject);
+begin
+  DesignF.ZoneDetail.Visible := CheckDetail.IsChecked;
+end;
+
+// -------------------------------------------------------------------------
+// الحدث: CheckFooterChange
+// الوظيفة: تحديث إعداد تذييل الصفحة في DesignF
+// Purpose: Update PageFooter visibility in DesignF
+// -------------------------------------------------------------------------
+procedure TFormMain.CheckFooterChange(Sender: TObject);
+begin
+  DesignF.PageFooterLayt := CheckFooter.IsChecked;
+  DesignF.PageFooter.visible := CheckFooter.IsChecked;
+end;
+
+// -------------------------------------------------------------------------
+// الحدث: CheckHeaderChange
+// الوظيفة: تحديث إعداد رأس الصفحة في DesignF
+// Purpose: Update PageHeader visibility in DesignF
+// -------------------------------------------------------------------------
+procedure TFormMain.CheckHeaderChange(Sender: TObject);
+begin
+  DesignF.PageHeaderLayt := CheckHeader.IsChecked;
+  DesignF.PageHeader.visible := CheckHeader.IsChecked;
+end;
+
+// -------------------------------------------------------------------------
+// الحدث: CheckSumChange
+// الوظيفة: تحديث إعداد الملخص في DesignF
+// Purpose: Update Summary visibility in DesignF
+// -------------------------------------------------------------------------
+procedure TFormMain.CheckSumChange(Sender: TObject);
+begin
+  DesignF.SummaryLayt := CheckSum.IsChecked;
+  DesignF.Summary.visible := CheckSum.IsChecked;
+end;
+
+// -------------------------------------------------------------------------
+// الحدث: CheckTitleChange
+// الوظيفة: تحديث إعداد العنوان في DesignF
+// Purpose: Update Title visibility in DesignF
+// -------------------------------------------------------------------------
+procedure TFormMain.CheckTitleChange(Sender: TObject);
+begin
+  DesignF.TitleLayt := CheckTitle.IsChecked;
+  DesignF.Title.visible := CheckTitle.IsChecked;
+end;
+
+// -------------------------------------------------------------------------
+// الحدث: DataSource1DataChange
+// الوظيفة: تحديث رقم السجل عند التبديل بين السجلات
+// Purpose: Update record number when changing records
+// يُظهر: 3/28 (السجل 3 من أصل 28)
+// Shows: 3/28 (record 3 out of 28)
+// -------------------------------------------------------------------------
+procedure TFormMain.DataSource1DataChange(Sender: TObject; Field: TField);
+begin
+  Label5.Text := inttostr(QuerySQL.RecNo) + '/' + inttostr(QuerySQL.RecordCount);
+end;
+
+// -------------------------------------------------------------------------
+// الحدث: FormActivate
+// الوظيفة: فتح الاستعلام عند تفعيل النموذج
+// Purpose: Open the query when the form is activated
+// إذا لم يكن مفتوحًا بالفعل
+// If it's not already open
+// -------------------------------------------------------------------------
+procedure TFormMain.FormActivate(Sender: TObject);
+begin
+  if not QuerySQL.Active then
+    QuerySQL.Open;
+end;
+
+// -------------------------------------------------------------------------
+// الحدث: FormCreate
+// الوظيفة: تهيئة اتصال قاعدة البيانات عند إنشاء النموذج
+// Purpose: Initialize database connection when form is created
+// يدعم ويندوز وأندرويد
+// Supports both Windows and Android
+// -------------------------------------------------------------------------
+procedure TFormMain.FormCreate(Sender: TObject);
+begin
+  {$IFDEF ANDROID}
+  // على أندرويد: استخدم مجلد المستندات
+  // On Android: Use documents folder
+  FDConnection1.Params.Values['Database'] :=
+    TPath.GetDocumentsPath + PathDelim + 'DBReport.db';
+  {$ENDIF ANDROID}
+
+  {$IFDEF MSWINDOWS}
+  // على ويندوز: استخدم مجلد التطبيق
+  // On Windows: Use application folder
+  FDConnection1.Params.Values['Database'] := ExtractFileDir(ParamStr(0)) + '\DBReport.db';
+  {$ENDIF MSWINDOWS}
+end;
+
+// -------------------------------------------------------------------------
+// الحدث: QuerySQLAfterOpen
+// الوظيفة: إخفاء مربعات التحرير بعد فتح الاستعلام
+// Purpose: Hide editing boxes after query is opened
+// لإظهار النتائج فقط
+// To show results only
+// -------------------------------------------------------------------------
 procedure TFormMain.QuerySQLAfterOpen(DataSet: TDataSet);
 begin
-    RectMasq.Visible:=false;
- RectSQL.Visible:=false;
+  RectMasq.Visible := false;
+  RectSQL.Visible := false;
 end;
 
 end.

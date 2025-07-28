@@ -9,7 +9,6 @@ object FormMain: TFormMain
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
-  OnActivate = FormActivate
   OnCreate = FormCreate
   DesignerMasterStyle = 3
   object BindNavigator2: TBindNavigator
@@ -663,7 +662,7 @@ object FormMain: TFormMain
     Params.Strings = (
       'DriverID=SQLite')
     LoginPrompt = False
-    Left = 82
-    Top = 261
+    Left = 114
+    Top = 221
   end
 end
