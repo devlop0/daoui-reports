@@ -92,3 +92,58 @@ This project is open-source under the [ MIT License](https://github.com/devlop0/
 
 Contributions, ideas, and improvements are welcome!  
 Let’s make **DAOUI Reports** the best FMX report engine together!🙌
+
+
+📢 Daoui Reports: A Simple, Powerful, and Overlooked Delphi Innovation
+Despite its simplicity, my project Daoui Reports is built on a brilliant and powerful idea:
+
+ 
+✅ Use any Delphi visual component at runtime — and print it directly in a report.
+
+No need for special reporting components like QuickReport or FastReport.
+Just design your layout using standard FireMonkey controls (TText, TLabel, TImage, TLayout, etc.), and the system captures it visually using MakeScreenshot, then generates a dynamic, paginated report — fully functional on Windows and Android.
+
+ 
+This concept has been working flawlessly since 2021.
+I’ve used it to build real-world printing solutions for Android apps, where traditional reporting tools fail or require heavy dependencies.
+
+ 
+I shared it on YouTube back in 2022 — not for fame, but to contribute to the Delphi community.
+
+ 
+Yet, despite its practicality, innovation, and cross-platform power, I’ve received no meaningful support — not moral, not financial.
+
+ 
+Every developer knows the time, effort, and passion it takes to build and maintain a project like this.
+From dynamic height calculation for text, to automatic page breaking, to PDF export on Android — every line of code was crafted with care.
+
+ 
+And still, it remains unnoticed.
+
+ 
+💡 Why This Matters
+It proves that you don’t need commercial tools to create professional reports in Delphi.
+It’s lightweight, open, and flexible — perfect for mobile apps.
+It empowers developers who can’t afford expensive reporting libraries.
+ 
+🤝 I’m Not Asking for Much
+Just a little support:
+
+A small donation to keep the development going.
+A word of encouragement — it means more than you think.
+Or simply sharing the project with someone who might benefit from it.
+ 
+Your support — even $5 — helps me keep building tools that give back to the Delphi community.
+
+ 
+👉 Buy me a coffee ☕ https://coff.ee/daouimahmoud
+
+ 
+Thank you for listening.
+To every developer out there building in silence — I see you.
+And I hope, one day, the world sees us too.
+
+ 
+— A Delphi Developer Who Believes in Simplicity
+
+
